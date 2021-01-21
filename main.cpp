@@ -92,8 +92,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  int sizeOfPlatter( int platterHeight = 5, int platterWidth = 15)
  {
-   ignoreUnused(platterHeight, platterWidth);
-   return{};
+    ignoreUnused(platterHeight, platterWidth);
+    return{};
  }
 
 /*
@@ -101,7 +101,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  void buyNewCar(  int carType = 3, float numOfSeats = 7.5f, char color = 'g')
  {
-   ignoreUnused(carType,numOfSeats,color);
+    ignoreUnused(carType,numOfSeats,color);
    
  }
 /*
@@ -109,8 +109,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 double bakeACake(int numOfEggs, float cupsOfFlour, float cupsOfSugar, bool bakingSoda = true )
 {
-  ignoreUnused( numOfEggs,cupsOfFlour,cupsOfSugar,bakingSoda);
-  return{};
+    ignoreUnused( numOfEggs,cupsOfFlour,cupsOfSugar,bakingSoda);
+    return{};
 }
 
 /*
@@ -118,53 +118,53 @@ double bakeACake(int numOfEggs, float cupsOfFlour, float cupsOfSugar, bool bakin
  */
 bool goFish(double numOfFish, int typeOfBait = 12, float lengthOfLine = 12.5f)
 {
-  ignoreUnused(typeOfBait,lengthOfLine,numOfFish);
-  return{};
+    ignoreUnused(typeOfBait,lengthOfLine,numOfFish);
+    return{};
 }
 /*
  5)
  */
 void popAWheely(char typeOfMotorcycle, float MPH)
 {
-  ignoreUnused(typeOfMotorcycle,MPH);
+    ignoreUnused(typeOfMotorcycle,MPH);
 }
 /*
  6)
  */
 bool holdOfficialsAccountable(int badgeNumber, int infraction, bool underCover)
 {
-  ignoreUnused(badgeNumber,infraction,underCover);
-  return{};
+    ignoreUnused(badgeNumber,infraction,underCover);
+    return{};
 }
 /*
  7)
  */
 void jamOut(float numOfInstruments = 8.6f, int numOfPlayers = 5, char genre = 'j')
 {
-  ignoreUnused(numOfInstruments, numOfPlayers, genre);
+    ignoreUnused(numOfInstruments, numOfPlayers, genre);
 }
 /*
  8)
  */
 bool climbMountEverest(int numOfDays , double lbsOfFood, float lbsOfSupplies = 1124.42f, bool favorableConditions = false )
 {
-  ignoreUnused(numOfDays,lbsOfFood,lbsOfSupplies,favorableConditions);
-  return{};
+    ignoreUnused(numOfDays,lbsOfFood,lbsOfSupplies,favorableConditions);
+    return{};
 }
 /*
  9)
  */
 void playASound(char soundType, float amplitude = 0.5f, int lengthInMils = 500)
 {
-  ignoreUnused(soundType,amplitude,lengthInMils);
+    ignoreUnused(soundType,amplitude,lengthInMils);
 }
 /*
  10)
  */
 double getDatBread(int amntOfMoolah, bool inWallet = false)
 {
-  ignoreUnused(amntOfMoolah,inWallet);
-  return{};
+    ignoreUnused(amntOfMoolah,inWallet);
+    return{};
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
