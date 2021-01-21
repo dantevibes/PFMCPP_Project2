@@ -16,14 +16,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
  
- 
- 
- 
- 
- 
- 
- 
- 
+ integer
+ character
+ boolean
+ floating point
+ double floating point
+ void
+
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
@@ -31,6 +30,7 @@ video: Chapter 2 - Part 3
         - just ignore wchar_t. you do not need to declare 3 variables of type 'wchar_t'
         - 'void' is a return type. you do not need to declare 3 variables of type 'void'.
     b) at the end of the function, call ignoreUnused once and pass all of your variables to it. see line 71 for an example
+
  
 3) write out 10 functions
     a) each declaration should have a random number of parameters in the function parameter list.
@@ -55,11 +55,26 @@ video: Chapter 2 - Part 3
 void variableDeclarations()
 {
     //example:
-    int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int numba = 5;
+    int value = 2005;
+    int whole = 30005;
+    char letter = 'z';
+    char vowel = 'Y';
+    char ampers = '&';
+    bool isCool = true;
+    bool thisSux = false;
+    bool iCanFly = false;
+    float piece = 22.0f;
+    float part = 23.5f;
+    float segment = .0001f;
+    double wow = 22.3;
+    double wowee = 2000000.4;
+    double mauiWowee = 3331E6;
+   
     
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(numba, value, whole, letter, vowel, ampers, isCool, thisSux, iCanFly, piece, part, segment, wow, wowee, mauiWowee); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -75,43 +90,82 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+ int sizeOfPlatter( int platterHeight = 5, int platterWidth = 15)
+ {
+    ignoreUnused(platterHeight, platterWidth);
+    return{};
+ }
 
 /*
  2)
  */
-
+ void buyNewCar(  int carType = 3, float numOfSeats = 7.5f, char color = 'g')
+ {
+    ignoreUnused(carType,numOfSeats,color);
+   
+ }
 /*
  3)
  */
+double bakeACake(int numOfEggs, float cupsOfFlour, float cupsOfSugar, bool bakingSoda = true )
+{
+    ignoreUnused( numOfEggs,cupsOfFlour,cupsOfSugar,bakingSoda);
+    return{};
+}
 
 /*
  4)
  */
-
+bool goFish(double numOfFish, int typeOfBait = 12, float lengthOfLine = 12.5f)
+{
+    ignoreUnused(typeOfBait,lengthOfLine,numOfFish);
+    return{};
+}
 /*
  5)
  */
-
+void popAWheely(char typeOfMotorcycle, float MPH)
+{
+    ignoreUnused(typeOfMotorcycle,MPH);
+}
 /*
  6)
  */
-
+bool holdOfficialsAccountable(int badgeNumber, int infraction, bool underCover)
+{
+    ignoreUnused(badgeNumber,infraction,underCover);
+    return{};
+}
 /*
  7)
  */
-
+void jamOut(float numOfInstruments = 8.6f, int numOfPlayers = 5, char genre = 'j')
+{
+    ignoreUnused(numOfInstruments, numOfPlayers, genre);
+}
 /*
  8)
  */
-
+bool climbMountEverest(int numOfDays , double lbsOfFood, float lbsOfSupplies = 1124.42f, bool favorableConditions = false )
+{
+    ignoreUnused(numOfDays,lbsOfFood,lbsOfSupplies,favorableConditions);
+    return{};
+}
 /*
  9)
  */
-
+void playASound(char soundType, float amplitude = 0.5f, int lengthInMils = 500)
+{
+    ignoreUnused(soundType,amplitude,lengthInMils);
+}
 /*
  10)
  */
-
+double getDatBread(int amntOfMoolah, bool inWallet = false)
+{
+    ignoreUnused(amntOfMoolah,inWallet);
+    return{};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -132,27 +186,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto maxNumOfCookies = sizeOfPlatter();
     //2)
-    
+    buyNewCar(46);
     //3)
-    
+    auto howMuchCake = bakeACake(20,40.25f,33.33f);
     //4)
-    
+    auto fishCaught = goFish(20002);
     //5)
-    
+    popAWheely('K',120.2f);
     //6)
-    
+    auto guilty = holdOfficialsAccountable(55627, 432789, true);
     //7)
-    
+    jamOut('L');
     //8)
-    
+    auto climbSummitToday = climbMountEverest(4, 230.3, true);
     //9)
-    
+    playASound('%');
     //10)
+    auto amountOfDough = getDatBread(300000, true);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented,maxNumOfCookies,howMuchCake,fishCaught,guilty,climbSummitToday,amountOfDough);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
