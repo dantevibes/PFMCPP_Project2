@@ -90,20 +90,20 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- int sizeOfPlatter( int platterHeight = 5, int platterWidth = 15)
- {
+int sizeOfPlatter( int platterHeight = 5, int platterWidth = 15)
+{
     ignoreUnused(platterHeight, platterWidth);
     return{};
- }
+}
 
 /*
  2)
  */
- void buyNewCar(  int carType = 3, float numOfSeats = 7.5f, char color = 'g')
- {
+void buyNewCar(  int carType = 3, float numOfSeats = 7.5f, char color = 'g')
+{
     ignoreUnused(carType,numOfSeats,color);
    
- }
+}
 /*
  3)
  */
